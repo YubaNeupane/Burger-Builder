@@ -336,6 +336,8 @@ module.exports = function(webpackEnv) {
                 formatter: require.resolve('react-dev-utils/eslintFormatter'),
                 eslintPath: require.resolve('eslint'),
                 resolvePluginsRelativeTo: __dirname,
+                modules:true,
+                localIdentName:'[name]__[local]__[hash:base64:5'
                 
               },
               loader: require.resolve('eslint-loader'),
